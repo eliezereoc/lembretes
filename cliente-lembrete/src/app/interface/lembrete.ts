@@ -1,4 +1,3 @@
-import { type } from 'os';
 
 type prioridade = 'BAIXA' | 'MEDIA' | 'ALTA';
 

@@ -7,8 +7,7 @@ import { Lembrete } from '../../interface/lembrete';
   styleUrls: ['./form-lembrete.component.css']
 })
 export class FormLembreteComponent {
-  // @Input() lembrete: Lembrete = <Lembrete>{};
-  @Input() lembrete: Lembrete;
+  @Input() lembrete: Lembrete = {} as Lembrete;
   @Output() outputLembrete: EventEmitter<Lembrete> = new EventEmitter();
 
   onSubmit() {

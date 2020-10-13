@@ -11,7 +11,7 @@ import { ErrorMsgComponent } from '../../compartilhado/error-msg/error-msg.compo
 })
 export class ListaLembreteComponent implements OnInit {
   public lembretes: Lembrete[];
-  @ViewChild(ErrorMsgComponent, { static: false }) errorMsgComponent: ErrorMsgComponent;
+  @ViewChild(ErrorMsgComponent, { static: true }) errorMsgComponent: ErrorMsgComponent;
 
   constructor(private lembreteService: LembreteService) { }
 

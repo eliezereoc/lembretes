@@ -10,7 +10,7 @@ import { Lembrete } from 'src/app/interface/lembrete';
   styleUrls: ['./criar-lembrete.component.css']
 })
 export class CriarLembreteComponent {
-  @ViewChild(ErrorMsgComponent, { static: false }) errorMsgComponent: ErrorMsgComponent;
+  @ViewChild(ErrorMsgComponent, { static: true }) errorMsgComponent: ErrorMsgComponent;
 
   constructor(private lembreteService: LembreteService, private router: Router) { }
 
